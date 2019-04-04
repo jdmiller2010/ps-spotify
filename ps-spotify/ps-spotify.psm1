@@ -1,6 +1,8 @@
-$global:SpotifyBasicBearer             = ""
-$global:SpotifyRefreshToken            = ""
-$global:SpotifyAccessToken             = ""
+$tokens = Get-Content $env:USERPROFILE\spotifytokens.json -Raw | ConvertFrom-Json
+
+$global:SpotifyBasicBearer             = $tokens.SpotifyBasicBearer
+$global:SpotifyRefreshToken            = $tokens.SpotifyRefreshToken
+$global:SpotifyAccessToken             = $tokens.SpotifyAccessToken
 $global:SpotifyAccessTokenDateExpires  = (Get-Date)
 
 . $PSScriptRoot\Private\Get-SpotifyAccessToken.ps1
