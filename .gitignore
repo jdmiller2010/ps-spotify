@@ -45,3 +45,6 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+nomatch.out
+exactMatch.out
+multiMatch.out
