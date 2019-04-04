@@ -28,3 +28,4 @@ $global:SpotifyAccessTokenDateExpires  = (Get-Date)
 . $PSScriptRoot\Public\Get-SpotifyTracks.ps1
 . $PSScriptRoot\Public\Get-SpotifyUser.ps1
 . $PSScriptRoot\Public\Find-SpotifyItem.ps1
+. $PSScriptRoot\Public\Get-AlbumsFromLocal.ps1
